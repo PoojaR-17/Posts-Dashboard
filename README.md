@@ -19,7 +19,7 @@ Setup and Installation
 Clone this repository:
 bash
 Copy code
-git clone
+git clone https://github.com/PoojaR-17/Posts-Dashboard
 Open the project folder:
 bash
 Copy code
