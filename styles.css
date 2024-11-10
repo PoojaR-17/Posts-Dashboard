@@ -1,0 +1,158 @@
+/* Basic reset and styling */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container and header styling */
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #4a4e69;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Dropdown, input, and button styles */
+select,
+input[type="text"],
+button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+select:focus,
+input[type="text"]:focus,
+button:focus {
+  outline: none;
+  border-color: #4a4e69;
+}
+
+button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #4a4e69;
+}
+
+button:hover {
+  background-color: #2371b7;
+}
+
+/* Sort dropdown styling */
+#sortDropdown {
+  font-weight: bold;
+  background-color: #eaeaea;
+}
+
+/* Posts container and individual post styling */
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post {
+  background-color: #e2b8b8;
+  padding: 15px;
+  border: 1px solid #4572a0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.post:hover {
+  background-color: #f1f5f8;
+  transform: scale(1.02);
+}
+
+.post h2 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#pageInfo {
+  font-size: 1rem;
+  color: #666;
+}
+
+#prevButton,
+#nextButton {
+  background-color: #4a4e69;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#prevButton:hover,
+#nextButton:hover {
+  background-color: #6b7d8d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button,
+  input,
+  select {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
